@@ -1,0 +1,67 @@
+.center{
+  margin: auto;
+  border-radius: 20px;
+  width: 30%;
+  padding: 10px;
+  background-color: rgba(141, 138, 138, 0.294) ;
+}
+
+.mat-form-field{
+  width: 90%
+}
+.container-books{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+  }
+
+.books{
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+.mat-card {
+    max-height: 260px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all !important;
+    background-color: rgba(231, 230, 230, 0.109) !important;
+    color: black !important;
+}
+
+body{
+    background-color: darkgray !important;
+}
+
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  max-height: 120px;
+}
+.mat-card-actions{
+  margin:  0px !important;
+  padding: 0px !important;
+}
+.mat-card-header-text{
+  max-width: 150px !important;
+}
+
+.mat-card-header .mat-card-title{
+
+  font-size: 16px !important;
+}
+.textFormat{
+   white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.textFormatTitle{
+    white-space: nowrap; 
+    width: 7em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

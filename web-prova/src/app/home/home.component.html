@@ -1,0 +1,32 @@
+<div class="center">
+<mat-form-field class="example-full-width">
+            <mat-label>Pesquisar Livros</mat-label>
+            <input [(ngModel)]="filtro" color="secondary" matInput placeholder="Ex: Harry Potter" value="">
+</mat-form-field>
+<button (click)="sendBook()" mat-icon-button color="primary" aria-label="Example icon button with a heart icon">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>
+</button>
+</div>
+
+<div class="container-books">
+        <div class="books" *ngFor="let book of booksList">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title><p class="textFormatTitle">{{book.volumeInfo.title}}</p></mat-card-title>
+                </mat-card-header>
+                    <img mat-card-image [src]="book.volumeInfo.imageLinks.thumbnail" class="img">
+
+                    <mat-card-content>
+                        <p class="textFormat">
+                            {{book.volumeInfo.description}} 
+                        </p>
+
+                    </mat-card-content>
+                <mat-card-actions>
+                    <button (click)="save(book)" mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+                        <mat-icon aria-hidden="false" aria-label="Example home icon">favorite</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+</div>
